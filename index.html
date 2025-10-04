@@ -112,8 +112,8 @@ body {
 }
 
 .logo-circle-wrapper {
-    width: 120px;
-    height: 120px;
+    width: 100px; /* Changed from 120px */
+    height: 100px; /* Changed from 120px */
     border-radius: 50%;
     background-color: #000;
     display: flex;
@@ -212,10 +212,10 @@ body {
 </style>
 
 <script>
-// 🚨 CORRECT WHATSAPP NUMBER: +91 7048180571 (Country code 91 added)
+// 🚨 TIMER CHANGED TO 2 SECONDS
 const whatsappLink = "https://wa.me/917048180571?text=Hello,%20I%20Need%20%21D"; 
 const PIXEL_DELAY_MS = 100;
-let timer = 5; 
+let timer = 2; 
 let intervalId;
 
 function redirectToWhatsApp() {
@@ -280,7 +280,7 @@ function manualRedirect(){
     
         <button class="chat-button" onclick="manualRedirect()">
         Continue to chat in 
-        <span id="countdown-display">5</span>
+        <span id="countdown-display">2</span>
     </button>
     
     <div class="chat-message-preview-wrapper">
